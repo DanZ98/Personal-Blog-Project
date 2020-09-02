@@ -1,0 +1,290 @@
+/*
+#######################################################
+
+Default CSS Settings
+
+#######################################################
+*/
+
+html {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transform: translate3d(0,0,0);
+}
+
+*, *:before, *:after {
+  -webkit-box-sizing: inherit;
+  -moz-box-sizing: inherit;
+  box-sizing: inherit;
+}
+
+.clearfix:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0;
+}
+
+.clearfix { display: inline-block; }
+/* start commented backslash hack \*/
+* html .clearfix { height: 1%; }
+.clearfix { display: block; }
+/* close commented backslash hack */
+
+/*
+#######################################################
+
+Header Section
+
+#######################################################
+*/
+
+header {
+  background: url(../images/header-background-image.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  width: 100vw;
+  min-height: 100vh;
+  background-attachment: initial;
+}
+
+/* Hamburger menu */
+
+header .fa-bars {
+  display: none;
+}
+
+header button #header-btn {
+  display: none; 
+}
+
+header .hamburger-menu {
+  display: none;
+}
+
+/* End Hamburger menu */
+
+header .intro-logo {
+  text-align: center;
+  border-bottom: 1px solid #5291ae;
+}
+
+header .intro-logo img{
+  -webkit-transition: .5s;
+  -moz-transition: .5s;
+  -o-transition: .5s;
+  transition: .5s;
+}
+
+header .intro-logo img:hover{
+  -webkit-transform: translate(0, -5px);
+  -moz-transform: translate(0, -5px);
+  -o-transform: translate(0, -5px);
+  transform: translate(0, -5px);
+  cursor: pointer;
+}
+
+header .intro-content {
+  margin: 0 auto;
+  padding: 0 20px;
+  text-align: center;
+  max-width: 648px;
+  width: 100%;
+}
+
+header nav {
+  margin-top: 66px;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Montserrat, sans-serif;
+  text-transform: uppercase;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+header nav ul li {
+  margin: 0 20px;
+  display: inline-block;
+}
+
+header nav ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+header nav ul li a:hover {
+  color: #5fb0f5;
+  -webkit-transition: .5s;
+  -moz-transition: .5s;
+  -o-transition: .5s;
+  transition: .5s;
+  cursor: pointer;
+}
+
+header h1 {
+  margin-top: 210px;
+  color: #fff;
+  font-family: Roboto, sans-serif;
+  font-weight: 500;
+  text-transform: uppercase;
+  font-size: 50px;
+  line-height: normal;
+}
+
+header h2 {
+  padding-bottom: 35px;
+  font-family: Roboto, sans-serif;
+  font-size: 83px;
+  font-weight: 100;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 6px;
+  border-bottom: 1px solid #5291ae;
+  line-height: normal;
+}
+
+header h3 {
+  margin: 20px 0 61px 0;
+  font-family: Roboto, sans-serif;
+  color: #fff;
+  font-size: 37px;
+  font-weight: 100;
+  text-transform: uppercase;
+  line-height: normal;
+}
+
+header input {
+  text-align: center;
+  border-radius: 5px;
+  width: 170px;
+  height: 35px;
+  border: none;
+  font-size: 19px;
+  font-family: Montserrat, sans-serif;
+  font-weight: 600;
+}
+
+header .intro-content input:nth-child(6) {
+  margin: 0 17px;
+}
+
+::placeholder {
+  color: #7cbef7;
+  opacity: 1; /* Firefox */
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color:#7cbef7;
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+  color:#7cbef7;
+}
+
+header .intro-content button {
+  text-align: center;
+  border-radius: 5px;
+  width: 219px;
+  height: 35px;
+  border: none;
+  font-size: 19px;
+  font-family: Montserrat, sans-serif;
+  font-weight: 600;
+  background-color: #f05d20;
+  color: #fff;
+}
+
+header button:hover {
+  -webkit-transition: .3s;
+  -moz-transition: .3s;
+  -o-transition: .3s;
+  transition: .3s;
+  background-color: #5fb0f5;
+  color: #fff;
+  cursor: pointer;
+}
+
+/*
+#######################################################
+
+Mobile Section
+
+#######################################################
+*/
+
+@media only screen and (max-width: 768px) {
+  
+  header .fa-bars {
+    display: block;
+    position: absolute;
+    left: 7px;
+    top: 5px;
+    color: white;
+    font-size: 38px;
+    z-index: 9;
+  }
+
+  header button {
+    display: block;
+    border: none;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 45px;
+    left: 20px;
+    background-color: inherit;
+  }
+
+  header .hamburger-menu {
+    position: absolute;
+    top: 0;
+    display: block;
+    margin-top: 60px;
+  }
+
+  header .hamburger-menu nav {
+    margin: 60px 0 0 0px;
+    display: block;
+  }
+
+  header .hamburger-menu nav ul li {
+    display: inherit;
+    margin-bottom: 29px;
+  }
+
+  header .intro-content nav {
+    display: none;
+  }
+
+  header .hamburger-menu ul li {
+    display: block;
+  }
+  header .hamburger-menu ul {
+    display: none;
+  }
+
+    
+
+  header .intro-content input, header .intro-content input:nth-child(6) {
+    margin: 40px 0 0 0;
+    width: 100%;
+    height: 60px;
+  }
+
+  header .intro-content button{
+    /* position: inherit; */
+    margin-top: 40px;
+    width: 100%;
+    height: 60px;
+  }
+}
+
+
+
+
+

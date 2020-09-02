@@ -6,24 +6,42 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, user-scalable=1.0">
     <script src="https://use.fontawesome.com/e17679cca8.js"></script><!-- font awesome cdn -->
-    <link rel="shortcut icon" href="assets/images/fitness-favicon.png" sizes="16x16"><!-- fav browser icon -->
+    <link rel="shortcut icon" href="images/fitness-favicon.png" sizes="16x16"><!-- fav browser icon -->
     <link href="assets/images/fitness-favicon.png" sizes="5x5" rel="icon" ><!-- fav firefox  browser icon -->
-    <link rel="stylesheet" href="assets/css/cssreset.css"><!-- css reset -->
-    <link rel="stylesheet" href="css/main.styles"><!-- main styles -->
+    <link rel="stylesheet" href="css/cssreset-styles.css"><!-- css reset -->
+    <link rel="stylesheet" href="css/main-styles.css"><!-- main styles -->
+    <script src="js/modernizr-custom.js"></script><!-- js modernizr -->
 </head>
 <body>
     <!-- content wrapper -->
-    <div id="wrapper">
+    <div id="home-wrapper">
 
         <!-- introduction content -->
         <header>
-            <div class="intro-content">
+            <button id="header-btn" onclick = 'showmenu();'><i class="fa fa-bars" aria-hidden="true"></i></button>
+            <div class="hamburger-menu">
+                <nav>
+                    <ul id="hamburgerUl">
+                        <li><a href="" target="_blank">home</a></li>
+                        <li><a href="" target="_blank">blog</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="intro-logo">
                 <img src="images/zins-review-logo.png" alt="Zins Review Logo" width="200" height="auto">
+            </div>
+            <div class="intro-content">
+                <nav>
+                    <ul>
+                        <li><a href="#" target="_blank">home</a></li>
+                        <li><a href="#" target="_blank">blog</a></li>
+                    </ul>
+                </nav>
                 <h1>come along to</h1>
                 <h2>food heaven</h2>
                 <h3>subscribe to Dan's newsletter</h3>
-                <input type="text" placeholder="NAME">
-                <input type="text" placeholder="EMAIL">
+                <input type="text" placeholder="NAME" name="name" required>
+                <input type="text" placeholder="EMAIL" name="name" required>
                 <button>SUBSCRIBE</button>
             </div>
         </header>
@@ -49,7 +67,7 @@
         <!-- end zins event content -->
 
         <!-- blog posts -->
-        <section>
+        <section id="blog-posts">
             <div class="blog-container">
                 <div class="blog-card">
                     <img src="images/la-french-cafe.jpg" alt="La French Cafe" width="495" height="auto">
@@ -98,7 +116,7 @@
         <!-- end blog posts -->
 
         <!-- zins critic's awards content -->
-        <section>
+        <section id="awards">
             <h4>zins <br> critic's awards</h4>
             <div class="awards-container">
                 <div class="awards-content">
@@ -145,5 +163,8 @@
 
     </div>
     <!-- end main wrapper -->
+
+<script src="js/jquery-2.1.4.min.js"></script> 
+<script src="js/myscript.js"></script> 
 </body>
 </html>
