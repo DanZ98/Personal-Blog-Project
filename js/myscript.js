@@ -1,9 +1,6 @@
-function showmenu()
-{
-    var x = document.getElementById('hamburgerUl');
-    if (x.style.display == 'none') {
-        x.style.display = 'block';
-    } else {
-        x.style.display = 'none';
-    }
+// Hamburger Toggle Menu
+
+function showmenu() {
+    document.getElementById("hamburgerUl").classList.toggle("show");
+    document.getElementById("hamburger-backgroundcolor").classList.toggle("show-2");
 }
