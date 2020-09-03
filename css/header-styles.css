@@ -1,42 +1,6 @@
 /*
 #######################################################
 
-Default CSS Settings
-
-#######################################################
-*/
-
-html {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-  -webkit-transform: translate3d(0,0,0);
-}
-
-*, *:before, *:after {
-  -webkit-box-sizing: inherit;
-  -moz-box-sizing: inherit;
-  box-sizing: inherit;
-}
-
-.clearfix:after {
-  visibility: hidden;
-  display: block;
-  font-size: 0;
-  content: " ";
-  clear: both;
-  height: 0;
-}
-
-.clearfix { display: inline-block; }
-/* start commented backslash hack \*/
-* html .clearfix { height: 1%; }
-.clearfix { display: block; }
-/* close commented backslash hack */
-
-/*
-#######################################################
-
 Header Section
 
 #######################################################
@@ -95,8 +59,8 @@ header .intro-logo img:hover{
 }
 
 header .intro-content {
-  margin: 0 auto;
-  padding: 0 20px;
+  margin: 50px auto 0 auto;
+  padding: 20px 20px 250px 20px;
   text-align: center;
   max-width: 648px;
   width: 100%;
@@ -246,6 +210,8 @@ Mobile Section
     border-bottom: 7px solid #3b7089;
   }
 
+  /* End Toggle Menu Display */
+
   header .fa-bars {
     display: block;
     position: absolute;
@@ -296,6 +262,10 @@ Mobile Section
 
   header .intro-content nav {
     display: none;
+  }
+
+  header .intro-content .contact-info{
+    margin-bottom: 200px;
   }
 
   header .intro-content input, header .intro-content input:nth-child(6) {
