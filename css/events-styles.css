@@ -29,7 +29,6 @@ article .zins-events-container {
   max-width: 1400px;
   width: 100%;
   height: auto;
-  font-family: Montserrat, sans-serif;
   display: grid;
   grid-template-areas: 
   'events-content events-content'
