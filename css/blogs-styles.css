@@ -22,6 +22,7 @@ Blog Posts Section
 
 #blog-posts .blog-container a {
     text-decoration: none;
+    z-index: 1;
 }
 
 #blog-posts .blog-container .blog-card {
