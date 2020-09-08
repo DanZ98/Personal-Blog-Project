@@ -6,7 +6,7 @@ Header Section
 #######################################################
 */
 
-header {
+#home-wrapper header {
   background: url(../images/header-background-image.jpg) no-repeat center center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -16,87 +16,6 @@ header {
   min-height: 90vh;
   background-attachment: initial;
   position:relative;
-}
-
-/* Hamburger menu */
-
-header button:first-child {
-  display: none;
-}
-
-header .fa-bars {
-  display: none;
-}
-
-header button #header-btn {
-  display: none; 
-}
-
-header .hamburger-menu {
-  display: none;
-}
-
-/* End Hamburger menu */
-
-header .intro-logo {
-  padding: 40px 0;
-  text-align: center;
-  border-bottom: 1px solid #5291ae;
-}
-
-header .intro-logo img{
-  -webkit-transition: .5s;
-  -moz-transition: .5s;
-  -o-transition: .5s;
-  transition: .5s;
-}
-
-header .intro-logo img:hover{
-  -webkit-transform: translate(0, -5px);
-  -moz-transform: translate(0, -5px);
-  -o-transform: translate(0, -5px);
-  transform: translate(0, -5px);
-  cursor: pointer;
-}
-
-header .intro-content {
-  margin: 50px auto 0 auto;
-  padding: 20px 20px 250px 20px;
-  text-align: center;
-  max-width: 648px;
-  width: 100%;
-}
-
-header nav {
-  position: absolute;
-  top: 240px;
-  left: 0;
-  right: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: Montserrat, sans-serif;
-  text-transform: uppercase;
-  font-size: 15px;
-  font-weight: 500;
-}
-
-header nav ul li {
-  margin: 0 20px;
-  display: inline-block;
-}
-
-header nav ul li a {
-  color: #fff;
-  text-decoration: none;
-}
-
-header nav ul li a:hover {
-  color: #5fb0f5;
-  -webkit-transition: .5s;
-  -moz-transition: .5s;
-  -o-transition: .5s;
-  transition: .5s;
-  cursor: pointer;
 }
 
 header h1 {
@@ -190,83 +109,17 @@ Mobile Section
 #######################################################
 */
 
+@media only screen and (max-width: 1405px) { 
+
+  #blog-wrapper article .blog-wrapper {
+    grid-template-columns: 1fr !important;
+  
+  }
+}
+
 @media only screen and (max-width: 768px) {
   
-  /* Toggle Menu Display */
-
-  .dropdown-content {
-    display: none;
-  }
-
-  .show {
-    margin-bottom: 46px;
-    display: block;
-  }
-
-  .show-2{
-    background-color: #5291ae;
-    min-height: 19vh;
-    text-align: center;
-    opacity: .98;
-    padding-top: 100px;
-    border-bottom: 7px solid #3b7089;
-  }
-
-  /* End Toggle Menu Display */
-
-  header .fa-bars {
-    display: block;
-    position: absolute;
-    left: 9px;
-    top: 5px;
-    color: white;
-    font-size: 38px;
-    z-index: 9;
-  }
-
-  header button:first-child {
-    display: block;
-    border: none;
-    width: 50px;
-    height: 50px;
-    position: absolute;
-    top: 33px;
-    left: 20px;
-    background-color: inherit;
-  }
-
-  header .hamburger-menu {
-    display: block;
-    left: 5px;
-  }
-
-  header .hamburger-menu nav {
-    position: absolute;
-    top: 0;
-  }
-
-  header .hamburger-menu nav ul li {
-    margin-bottom: 0px;
-    line-height: 45px;
-    display: block;
-    padding: 0;
-  }
-
-  header .hamburger-menu nav ul li:hover{
-    background-color: #234d60;
-    margin: 0;
-    width: 100%;
-    display: block;
-    height: 45px;
-    line-height: 45px;
-    cursor: pointer;
-  }
-
-  header .intro-content nav {
-    display: none;
-  }
-
-  header .intro-content .contact-info{
+  header .intro-content .contact-info {
     margin-bottom: 200px;
   }
 
@@ -276,12 +129,14 @@ Mobile Section
     height: 60px;
   }
 
-  header .intro-content button{
+  header .intro-content button {
     margin-top: 40px;
     width: 100%;
     height: 60px;
   }
+
 }
+
 
 
 
