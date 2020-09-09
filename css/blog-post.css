@@ -93,7 +93,7 @@ body {
 }
 
 #blog-wrapper header .blog-inner-container .blog-content-copy h1 span {
-    font-weight: 700;
+    font-weight: bold;
 }
 
 #blog-wrapper header .blog-inner-container .blog-content-copy h1 {
@@ -154,7 +154,7 @@ body {
     margin-bottom: 140px;
     font-size: 52px;
     text-transform: uppercase;
-    font-weight: 700;
+    font-weight: bold;
     color: #da0000;
     line-height: normal;
 }
@@ -172,6 +172,7 @@ body {
     padding-bottom: 10px;
     font-weight: 300;
     border-bottom: 1px solid #2a353c;
+    font-style: italic;
 }
 
 #blog-wrapper article .blog-wrapper .blog-content:nth-child(2) p {
@@ -226,6 +227,24 @@ body {
     color:#7cbef7;
 }
 
+#blog-wrapper article blockquote {
+    position: relative;
+    max-width: 1300px;
+    width: 100%;
+    margin: 20px auto 110px auto;
+    font-size: 40px;
+    line-height: normal;
+    padding: 0 20px;
+    font-style: italic;
+    color: #da0000;
+    font-weight: 300;
+    text-transform: uppercase;
+}
+
+#blog-wrapper article blockquote div{
+    text-align: right;
+}
+
 /*
 #######################################################
 
@@ -267,6 +286,10 @@ Mobile Section
 
     #blog-wrapper article .blog-wrapper .blog-content:nth-child(2) h2 {
         margin-bottom: 50px;
+    }
+
+    #blog-wrapper article blockquote {
+        font-size: 30px;
     }
 }
 
