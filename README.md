@@ -1,6 +1,6 @@
 # Blog Landing Page Project
 
-Personal static blog project showcasing HTML5, CSS3 Flexbox and Grid systems.
+Designed and converted PSD file into a personal static blog project showcasing HTML5, CSS3 Flexbox and Grid systems.
 
 ## Resources
 
