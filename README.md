@@ -1,4 +1,4 @@
-# Eclipse Landing Page Project
+# Blog Landing Page Project
 
 Personal static blog project showcasing HTML5, CSS3 Flexbox and Grid systems
 
